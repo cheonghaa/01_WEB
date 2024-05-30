@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            #body {
+                width: 500px;
+                margin: 10px auto;
+            }
+
+            #top {
+                background-color: green;
+            }
+
+            #middle {
+                overflow: hidden; /*left & right의 부모. float를 사용하기 위해서 */
+            }
+            #left {
+                background: red;
+                float: left;
+                width: 150px; /*내용부분의 너비*/
+            }
+            #right {
+                background: blue;
+                float: right;
+                width: 350px;
+            }
+            #bottom {
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="top">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veritatis molestias libero officiis ipsum eaque aliquam labore fugiat vel repudiandae hic reiciendis
+            consectetur sapiente, voluptatem a placeat saepe enim dolor!
+        </div>
+        <div id="middle">
+            <div id="left">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div id="right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo temporibus laboriosam illum placeat porro? Molestiae nemo quod dignissimos illo. Earum rem
+                provident, odit perferendis expedita hic iure in omnis? Consequuntur!
+            </div>
+        </div>
+        <div id="bottom">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consectetur exercitationem porro autem corrupti sapiente cupiditate, vel illum necessitatibus? Suscipit
+            recusandae sit asperiores ipsa. Repudiandae reiciendis quaerat maiores consequuntur quisquam?
+        </div>
+    </body>
+</html>

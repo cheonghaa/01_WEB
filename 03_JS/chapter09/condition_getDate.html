@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Basic</title>
+        <script>
+            let date = new Date();
+
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1; /*0부터 시작하기 때문에 1을 더해준다.*/
+            let day = date.getDay();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            if (hours < 12) {
+                //표현식 "hours < 가 참일 때 실행합니다
+                alert("오전입니다");
+            }
+            if (12 <= hours)
+                //표현식 "12 <= 가 참일 때 실행합니다
+                alert("오후입니다");
+        </script>
+    </head>
+    <body></body>
+</html>
